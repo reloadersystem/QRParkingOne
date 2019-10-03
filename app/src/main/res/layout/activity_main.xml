@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="180dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="Control Parking" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_placa"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:text="Placa :UUY212" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_fecha"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="28/09/2019  21:09:44" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="Gracias por su preferencia" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON" />
+
+        <Button
+            android:id="@+id/b_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_discoverable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCOVERABLE" />
+
+            <Button
+                android:id="@+id/b_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIST" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/promo"
+            android:textColor="@android:color/black" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="Promoción vigente para los meses de Octubre - Noviembre 2019"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>
